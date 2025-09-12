@@ -33,7 +33,7 @@ def keep_alive():
     t.start()
 API_ID = 25009640
 API_HASH = "c55f00011863ecc5a0a6e5f194e725ab"
-BOT_TOKEN = "8440147528:AAFfP0XMeeecQ8VfEqkM3yU5189zP8RgH7s"
+BOT_TOKEN = "8440147528:AAFr22z1DYfSoESo3zXVG8mSYl45s1td9p8"
 MONGO_URI = "mongodb+srv://boloradhey:Sunradhey#123@cluster1.udmuhb3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
 ADMIN_ID = [8331345905]  # Replace with your admin user ID
 Logs_channel= -1002974585758
@@ -715,3 +715,4 @@ if __name__ == "__main__":
     print("Bot started...")
     keep_alive()
     app.run()
+
