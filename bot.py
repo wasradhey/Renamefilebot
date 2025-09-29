@@ -114,7 +114,7 @@ Hi {username} i'm your file management
 bot , counterised for best work and
 execution.
 
-**BOT BY** : [#𝗥𝗔𝗗𝗛𝗘𝗬](t.me/boloradhey)
+**BOT BY** : [#𝗥𝗔𝗗𝗛𝗘𝗬](t.me/sunradhey)
 
 ✨ Key Features:
 • 📁 **Rename any file type**
@@ -130,7 +130,7 @@ execution.
 """
 
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("👤 Join channel", url="https://t.me/radheyhu"),
+        [InlineKeyboardButton("👤 Join channel", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),
          InlineKeyboardButton("ℹ️ Help", callback_data="help")],
         [InlineKeyboardButton("📤 Upload File", callback_data="upload_file")]
     ])
@@ -223,7 +223,7 @@ async def back_to_start_callback(client: Client, callback_query: CallbackQuery):
 Hi {username} i'm your file management
 bot , counterised for best work and
 execution.
-**BOT BY** : [#𝗥𝗔𝗗𝗛𝗘𝗬](t.me/boloradhey)
+**BOT BY** : [#𝗥𝗔𝗗𝗛𝗘𝗬](t.me/sunradhey)
 
 ✨ Key Features:
 • 📁 **Rename any file type**
@@ -239,7 +239,7 @@ execution.
 """
 
     keyboard = InlineKeyboardMarkup([
-         [InlineKeyboardButton("👤 Join channel ", url="https://t.me/radheyhu"),InlineKeyboardButton("💁 Help", callback_data="help")],
+         [InlineKeyboardButton("👤 Join channel ", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),InlineKeyboardButton("💁 Help", callback_data="help")],
         [InlineKeyboardButton("📤 Upload File", callback_data="upload_file")]
        
     ])
@@ -269,8 +269,8 @@ async def help_command(client: Client, message: Message):
 """
 
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📢 Channel", url="https://t.me/radheyhu"),
-         InlineKeyboardButton("👤 Developer", url="https://t.me/radheyhere")]
+        [InlineKeyboardButton("📢 Channel", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),
+         InlineKeyboardButton("👤 Developer", url="https://t.me/sunradhey")]
     ])
 
     await message.reply_text(
@@ -332,8 +332,8 @@ async def help_callback(client: Client, callback_query: CallbackQuery):
 
     keyboard = InlineKeyboardMarkup([
        
-        [InlineKeyboardButton("📢 Channel", url="https://t.me/radheyhu"),
-        InlineKeyboardButton("👤 Developer", url="https://t.me/radheyhere")],
+        [InlineKeyboardButton("📢 Channel", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),
+        InlineKeyboardButton("👤 Developer", url="https://t.me/sunradhey")],
          [InlineKeyboardButton("🔙 Back", callback_data="back_to_start")]
     ])
 
@@ -715,4 +715,5 @@ if __name__ == "__main__":
     print("Bot started...")
     keep_alive()
     app.run()
+
 
