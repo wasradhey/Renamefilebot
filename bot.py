@@ -36,9 +36,9 @@ API_HASH = "c55f00011863ecc5a0a6e5f194e725ab"
 BOT_TOKEN = "8591368783:AAEU09665JhNCc8P5A-G3epNa-f-lZlaQ9U"
 MONGO_URI = "mongodb+srv://boloradhey:Sunradhey#123@cluster1.udmuhb3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
 ADMIN_ID = [8331345905]  # Replace with your admin user ID
-Logs_channel= -1002974585758
-LOG_CHANNEL_ID= -1003073290226
-feedback_channel= -1002974585758
+Logs_channel= -1003492091416
+LOG_CHANNEL_ID= -1003483900091
+feedback_channel= -1003492091416
 
 # MongoDB setup
 mongo_client = MongoClient(MONGO_URI)
@@ -130,7 +130,7 @@ execution.
 """
 
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("👤 Join channel", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),
+        [InlineKeyboardButton("👤 Join channel", url="https://t.me/+CUsKH7enPaMxZWU1"),
          InlineKeyboardButton("ℹ️ Help", callback_data="help")],
         [InlineKeyboardButton("📤 Upload File", callback_data="upload_file")]
     ])
@@ -144,7 +144,7 @@ execution.
 
     admin_chat_id = Logs_channel 
     notification_text = f"""
-🆕 **New user started the bot @rdhrenamebot !!**
+🆕 **New user started the bot @rdhfilesbot !!**
 👤 **Name:** {first_name}
 🆔 **User ID:** `{user.id}`
 📛 **Username:** @{user.username if user.username else "N/A"}
@@ -170,7 +170,7 @@ async def feedback(client: Client, message: Message):
     feedback_msg = feedback_text[1]
 
     caption = (
-        f"📝 **New Feedback Received @rdhrenamebot **\n\n"
+        f"📝 **New Feedback Received @rdhfilesbot **\n\n"
         f"👤 User: [{message.from_user.first_name}](tg://user?id={user_id})\n"
         f"🆔 ID: {user_id}\n"
         f"📩 Message:\n{feedback_msg}"
@@ -239,7 +239,7 @@ execution.
 """
 
     keyboard = InlineKeyboardMarkup([
-         [InlineKeyboardButton("👤 Join channel ", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),InlineKeyboardButton("💁 Help", callback_data="help")],
+         [InlineKeyboardButton("👤 Join channel ", url="https://t.me/+CUsKH7enPaMxZWU1"),InlineKeyboardButton("💁 Help", callback_data="help")],
         [InlineKeyboardButton("📤 Upload File", callback_data="upload_file")]
        
     ])
@@ -269,7 +269,7 @@ async def help_command(client: Client, message: Message):
 """
 
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("📢 Channel", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),
+        [InlineKeyboardButton("📢 Channel", url="https://t.me/+CUsKH7enPaMxZWU1"),
          InlineKeyboardButton("👤 Developer", url="https://t.me/sunradhey")]
     ])
 
@@ -332,7 +332,7 @@ async def help_callback(client: Client, callback_query: CallbackQuery):
 
     keyboard = InlineKeyboardMarkup([
        
-        [InlineKeyboardButton("📢 Channel", url="https://t.me/+UKA5rFzjV7Y3Y2I1"),
+        [InlineKeyboardButton("📢 Channel", url="https://t.me/+CUsKH7enPaMxZWU1"),
         InlineKeyboardButton("👤 Developer", url="https://t.me/sunradhey")],
          [InlineKeyboardButton("🔙 Back", callback_data="back_to_start")]
     ])
@@ -715,6 +715,7 @@ if __name__ == "__main__":
     print("Bot started...")
     keep_alive()
     app.run()
+
 
 
 
